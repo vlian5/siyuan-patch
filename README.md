@@ -15,19 +15,19 @@
 
 ## 如何下载 客户端(Windows / Mac / Linux / Android)
 
-1. 进入 [Release页面 https://github.com/demoshang/siyuan-patch/releases](https://github.com/demoshang/siyuan-patch/releases)
+1. 进入 [Release页面 https://github.com/vlianx/siyuan-patch/releases](https://github.com/demoshang/siyuan-patch/releases)
 
 2. 选择对应平台下载  
 
-![image](https://github.com/demoshang/siyuan-patch/assets/26966709/d81f9e8f-027c-4ae6-ba67-51bca5b62bd5)
+![image](https://github.com/vlianx/siyuan-patch/assets/26966709/d81f9e8f-027c-4ae6-ba67-51bca5b62bd5)
 
 ## Docker 镜像
 
-<https://hub.docker.com/r/demoshang/siyuan/tags>
+<https://hub.docker.com/r/vlianx/siyuan/tags>
 
 ## 关于 ios 应用
 
-- 如果手机支持 [巨魔TrollStore](https://github.com/opa334/TrollStore), 可以在 [Release](https://github.com/demoshang/siyuan-patch/releases) 下载 `ipa` 文件(未签名)安装
+- 如果手机支持 [巨魔TrollStore](https://github.com/opa334/TrollStore), 可以在 [Release](https://github.com/vlianx/siyuan-patch/releases) 下载 `ipa` 文件(未签名)安装
 
 - 否则, 不支持IOS, 因为签名证书需要花钱, 不花钱的只能使用7天, 所以就不提供了
 
@@ -47,7 +47,7 @@
 		> 注意秘钥(Key)的 `Alias` 设置成 `debug`  
 
 		![generate-key](https://user-images.githubusercontent.com/26966709/275674510-3fe33b8f-5aa0-4eb0-bbb6-bfdd22c1fab2.png)  
-		2.不使用Android Studio，通过[JAVA JDK](https://github.com/vlian5/siyuan-patch/blob/main/javaJDK.md)生成
+		2.不使用Android Studio，通过[JAVA JDK](https://github.com/vlianx/siyuan-patch/blob/main/javaJDK.md)生成
 
 	2. 秘钥转成base64编码
 
@@ -68,7 +68,7 @@
 5. 按如下操作点击, 等待10分钟左右进入 `Release` 页面查看  
 *(如果已经存在最新版本了, 可以删除 `Release` 页面的版本后重新再点击)*  
 
-    ![release-cron](https://github.com/demoshang/siyuan-patch/assets/26966709/d139ff11-b4a8-46ff-a532-394fddf27c54)
+    ![release-cron](https://github.com/vlianx/siyuan-patch/assets/26966709/d139ff11-b4a8-46ff-a532-394fddf27c54)
 
 ## Mac 出现 `“SiYuan.app”已损坏，无法打开。`  
 
