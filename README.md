@@ -52,7 +52,7 @@
 	2. 秘钥转成base64编码
 
 		```bash
-		openssl base64 < your_signing_keystore.jks | tr -d '\n' | tee your_signing_keystore_base64_encoded.txt
+		openssl base64 -in siyuan.keystore.jks | tr -d '\n' | tee siyuan_keystore_base64_encoded.txt
 		```
 
 	3. 进入该项目的 `settings`-`Secrets and variables`-`Actions`, 点击 `New repository secret` 添加环境变量

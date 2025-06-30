@@ -18,13 +18,14 @@ keytool -help
 打开终端（Windows 使用 `cmd` 或 PowerShell，macOS/Linux 使用 Terminal），运行以下命令：
 
 ```bash
-keytool -genkeypair -v \
-  -keystore my-release-key.keystore \
-  -alias my-key-alias \
-  -keyalg RSA \
-  -keysize 2048 \
+keytool -genkeypair -v
+  -keystore siyuan.keystore.jks
+  -alias d
+  -keyalg RSA
+  -keysize 2048
   -validity 10000
 ```
+如果报错，每行结尾加空格 \
 
 #### **参数说明**：
 - `-keystore my-release-key.keystore`：生成的密钥库文件名（可自定义）。
@@ -36,7 +37,7 @@ keytool -genkeypair -v \
 ---
 
 ### **3. 填写信息**
-运行命令后，`keytool` 会提示你输入以下信息：
+运行命令后，`keytool` 会提示你输入以下信息，最后回复Y确认：
 1. **Keystore 密码**：设置密钥库的密码（例如 `123456`，建议使用强密码）。
 2. **密钥密码**：为密钥本身设置密码（可与 keystore 密码相同）。
 3. **证书信息**：
