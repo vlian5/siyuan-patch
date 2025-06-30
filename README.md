@@ -42,20 +42,22 @@
 1. fork 本项目到你自己项目
 2. 如果需要构建 Electron 客户端(Windows/Mac/Linux), 无需配置环境变量
 3. 如果需要构建 Android 客户端, 请执行以下步骤
-    1. 按照文章[生成上传密钥和密钥库](https://developer.android.com/studio/publish/app-signing?hl=zh-cn#generate-key)
-        > 注意秘钥(Key)的 `Alias` 设置成 `debug`  
+	1. 生成上传密钥和密钥库
+		i.按照文章,使用Android Studio[生成上传密钥和密钥库](https://developer.android.com/studio/publish/app-signing?hl=zh-cn#generate-key)
+		> 注意秘钥(Key)的 `Alias` 设置成 `debug`  
 
-        ![generate-key](https://user-images.githubusercontent.com/26966709/275674510-3fe33b8f-5aa0-4eb0-bbb6-bfdd22c1fab2.png)  
+		![generate-key](https://user-images.githubusercontent.com/26966709/275674510-3fe33b8f-5aa0-4eb0-bbb6-bfdd22c1fab2.png)  
+		ii.不使用Android Studio，通过[JAVA JDK](https://github.com/vlian5/siyuan-patch/blob/main/javaJDK.md)生成
 
-    2. 秘钥转成base64编码
+	2. 秘钥转成base64编码
 
-        ```bash
-        openssl base64 < your_signing_keystore.jks | tr -d '\n' | tee your_signing_keystore_base64_encoded.txt
-        ```
+		```bash
+		openssl base64 < your_signing_keystore.jks | tr -d '\n' | tee your_signing_keystore_base64_encoded.txt
+		```
 
-    3. 进入该项目的 `settings`-`Secrets and variables`-`Actions`, 点击 `New repository secret` 添加环境变量
-    4. `KEYSTORE` 上面`your_signing_keystore_base64_encoded.txt` 里面的内容
-    5. `KEYSTORE_PASSWORD` 生成上传密钥时填写的密码
+	3. 进入该项目的 `settings`-`Secrets and variables`-`Actions`, 点击 `New repository secret` 添加环境变量
+	4. `KEYSTORE` 上面`your_signing_keystore_base64_encoded.txt` 里面的内容
+	5. `KEYSTORE_PASSWORD` 生成上传密钥时填写的密码
 
 4. 如果需要构建 Docker 镜像
     1. 进入 `https://hub.docker.com/settings/security`, 点击 `New Access Token` 添加 token, 记住并保存该token
